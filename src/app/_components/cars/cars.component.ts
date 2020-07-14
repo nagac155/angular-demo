@@ -48,6 +48,7 @@ value;
 }
 
 searchText(e) {
+e.preventDefault();
 const items: any = this.searchInput.nativeElement.value.toLowerCase().trim().split(/[\s,]+/);
 this.data = this.cars_list().filter(car => {
   const matchingCarsList = [] ;
