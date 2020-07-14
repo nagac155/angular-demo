@@ -1,9 +1,9 @@
 <p *ngIf="value">cars works!</p>
 
-<mat-form-field appearance='fill' class="example-form-field" (ngSubmit)="searchText($event)">
+<mat-form-field appearance='fill' class="example-form-field">
     <mat-label>Search</mat-label>
     <input #searchInput matInput type="text" placeholder="Search with Model, Make" [value]="value" (keypress)="onKeyPress($event)" (paste)="onPaste($event)" (click)="searchText($event)">
-    <button mat-button *ngIf="value" matSuffix mat-icon-button type="submit" >
+    <button mat-button *ngIf="value" matSuffix mat-icon-button type="submit" (click)="searchText($event)">
       <mat-icon>search</mat-icon>
     </button>
 </mat-form-field>
