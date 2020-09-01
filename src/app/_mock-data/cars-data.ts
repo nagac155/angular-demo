@@ -19,5 +19,5 @@ export const carsList: Array<ICars> = [
     {make: 'Toyota', model: 'Corolla', year: '2019' },
     {make: 'Toyota', model: 'Avalon', year: '2019' },
     {make: 'Toyota', model: 'C-HR', year: '2019' },
-    {make: 'Toyota', model: 'RAV4', year: '2019' },
+    {make: 'Toyota', model: 'RAV4', year: '2018' },
 ] ;
